@@ -13,8 +13,6 @@ from pathlib import Path
 
 home = str(Path.home())
 
-# lake_dir = os.path.join(home, '.lake', 'seek')
-
 home_url = 'https://www.yotepresto.com'
 requisition_url = f'{home_url}/user/requisitions_listings'
 
