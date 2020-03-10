@@ -1,4 +1,4 @@
-## yotepresto Loan Automator
+## Loan Automator for yotepresto.com
 
 This project aims to allow other lenders using yotepresto (a Mexican P2P Lending Marketplace) to **automatically** loan money to borrowers applying for loans.
 
@@ -28,6 +28,7 @@ This project aims to resolve some frustrations I got tired of:
 
 However, there are limitations with 'Autoinvest', which you can read on their [site](yotepresto.com).
 
+
 ## Features
 1. Export your portfolio and transactional data to CSV.
 2. Automatically loan out your hard earnt MXN pesos (at MXN200 per loan).
@@ -36,6 +37,7 @@ However, there are limitations with 'Autoinvest', which you can read on their [s
 
 ## Dependencies
 
+- [A yotepresto account](https://www.yotepresto.com/)
 - [A bankroll in Mexican Pesos](https://en.wikipedia.org/wiki/Mexican_peso)
 - [macOS 10.14.6 (Mojave)](https://en.wikipedia.org/wiki/MacOS)
 - [Python 3.7.2](https://www.python.org/)
