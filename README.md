@@ -28,14 +28,10 @@ This project aims to resolve some frustrations I got tired of:
 
 However, there are limitations with 'Autoinvest', which you can read on their [site](yotepresto.com).
 
-
-## Roadmap
-
-1. Improve the CLI (execute different types of tasks based on CLI flags) -- replacing the current commented out code
-2. Add configuration/re-configuration of user and lending settings
-3. Schedule loan out page refreshes via crontabs
-4. Address code quality issues
-5. Localize README.md into Spanish
+## Features
+1. Export your portfolio and transactional data to CSV.
+2. Automatically loan out your hard earnt MXN pesos (at MXN200 per loan).
+3. Receive email notifications when your funds get depleted (fall into the next MXN1,000 pesos band) to remind you to top up your account.
 
 
 ## Dependencies
@@ -45,6 +41,26 @@ However, there are limitations with 'Autoinvest', which you can read on their [s
 - [Python 3.7.2](https://www.python.org/)
 - [ChromeDriver (Selenium Web Driver)](https://chromedriver.chromium.org/getting-started)
 - [BeautifulSoup4 for html parsing](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+
+## Usage
+
+1. Install dependencies above if necessary.
+2. Create a copy of the .envexample and fill out your username and password (don't forget to encode them with base64)
+3. Ensure your yotepresto account is funded with the money you want automatically loaned out.
+4. Run `make loop`
+5. Sit back and relax as the magic happens, when new loans appear this solution should now automatically fund and checkout new loan applications.
+6. ...
+7. `$$$`
+
+
+## Roadmap
+
+1. Improve the CLI (execute different types of tasks based on CLI flags) -- replacing the current commented out code
+2. Add configuration/re-configuration of user and lending settings
+3. Schedule loan out page refreshes via crontabs
+4. Address code quality issues
+5. Localize README.md into Spanish
 
 
 ## A note to the team at yotepresto.com
