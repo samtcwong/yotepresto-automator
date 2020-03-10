@@ -6,15 +6,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.common.exceptions import NoSuchElementException
 
+
 class WebDriver:
 
     def __init__(self, maximize=True):
         self._driver = webdriver.Chrome()
         self._wait = WebDriverWait(self._driver, 2)
-    
+
         if maximize:
             self._driver.maximize_window()
-    
+
     def close(self):
         self._driver.close()
 
@@ -51,6 +52,11 @@ class WebDriver:
             ec.element_to_be_clickable((By.ID, elem_id))
         )
 
+    def wait_until_clickable_by_selector(self, css_selector):
+        self._wait.until(
+            ec.element_to_be_clickable((By.CSS_SELECTOR, css_selector))
+        )
+
     def map_elements_by_css_selector(self, css_selector, func):
         elems = self._driver.find_elements_by_css_selector(css_selector)
         for elem in elems:
@@ -59,13 +65,18 @@ class WebDriver:
     def get_elements_by_css_selector(self, css_selector):
         elems = self._driver.find_elements_by_css_selector(css_selector)
         return elems
-    
+
+    def get_element_by_css_selector(self, css_selector):
+        elems = self._driver.find_element_by_css_selector(css_selector)
+        return elems
+
     def map_elements_by_id(self, elem_id, func):
         elems = self._driver.find_elements_by_id(elem_id)
         for elem in elems:
             func(elem)
 
     def get_elem_text_by_css_selector(self, css_selector):
+        elem = None
         try:
             self._wait.until(
                 ec.element_to_be_clickable((By.CSS_SELECTOR, css_selector))
@@ -73,3 +84,9 @@ class WebDriver:
             elem = self._driver.find_element_by_css_selector(css_selector)
         finally:
             return None if elem is None else elem.text
+
+    def get_page_source(self):
+        return self._driver.page_source
+
+    def click(self, element):
+        element.click()
