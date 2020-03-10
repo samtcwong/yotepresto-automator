@@ -22,11 +22,7 @@ This project aims to resolve some frustrations I got tired of:
 1. Refreshing the loan out page to see if there were new loans for me to lend out the minimum amount of 200 pesos (ie. executing a diversification strategy).
 2. Missing opportunities when I wasn't able to refresh the loan out page due to not being a robot.
 3. Manually exporting my data from the yotepresto Web UI.
-4. Overcoming limitations in the 'Autoinvest' feature which was recently released
-
-*Auto pretty much what this tool does.
-
-However, there are limitations with 'Autoinvest', which you can read on their [site](yotepresto.com).
+4. Overcoming limitations in the 'Autoinvest' feature which was released at the start of March, 2020.
 
 
 ## Features
