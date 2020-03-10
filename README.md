@@ -40,20 +40,18 @@ However, there are limitations with 'Autoinvest', which you can read on their [s
 
 ## Dependencies
 
-- A bankroll in Mexican Pesos
-- macOS 10.14.6 (Mojave)
-- Python 3.7.2
+- [A bankroll in Mexican Pesos](https://en.wikipedia.org/wiki/Mexican_peso)
+- [macOS 10.14.6 (Mojave)](https://en.wikipedia.org/wiki/MacOS)
+- [Python 3.7.2](https://www.python.org/)
 - [ChromeDriver (Selenium Web Driver)](https://chromedriver.chromium.org/getting-started)
 - [BeautifulSoup4 for html parsing](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 
-## Notes to the team at yotepresto.com
+## A note to the team at yotepresto.com
 
-- Your team has built a really great product that I love using!
+- Your team has built a really great marketplace that I love using!
 - Please don't interpret this tool as a means or a statement that your work isn't valued!
-- The work your team does is super valuable as it is democratises the way people borrow money and loan money to earn interest.
+- The work your team does is super valuable as it democratises the way people borrow money and loan money to earn interest.
 - It also circumvents incumbents in the market who aren't providing competitive interest rates.
 
-If any of your team members ever visit Melbourne, Australia.
-
-Please reach out to me and I'll buy you a cold one (beer)!
+If any of your team members ever visit Melbourne, Australia, please reach out to me and I'll shout you a cold one (ie. cerveza)!
